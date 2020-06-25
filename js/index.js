@@ -7,7 +7,12 @@ async function run() {
   console.log("Objects", await viewerApi.getObjects());
   viewerApi.setVisibility("Schirm_1_P", false, false);
   viewerApi.setVisibility("Schirm_3_P", false, false);
-  viewerApi.setVisibility("Beine_2_P", false, false);
+  viewerApi.setVisibility("Beine_1_P", false, false);
+
+  viewerApi.setPositionAbsolute("Schirm_1_P", [0.0, 0, 0.0]);
+  viewerApi.setPositionAbsolute("Schirm_3_P", [0.0, 0, 0.0]);
+  viewerApi.setPositionAbsolute("Beine_1_P", [0.0, 0, 0.0]);
+  
 
   document.getElementById("form-option-1").addEventListener("click", handleFormChange);
   document.getElementById("form-option-2").addEventListener("click", handleFormChange);

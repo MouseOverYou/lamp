@@ -23,7 +23,8 @@ p {
 
 /* menu-container*/
 .menu-container {
-	position: absolute;
+    position: absolute;
+    bottom: 0px;
 	display: inline-block;
 	z-index: 10; 
 }
@@ -88,7 +89,7 @@ p {
 }
 .small {
     width: 32px;
-    border: 0px solid #323334;
+    border: 1px solid #32333400;
 }
 
 .buttons-holder{
