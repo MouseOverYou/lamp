@@ -1,17 +1,19 @@
 import { VctrApi } from "https://www.vectary.com/viewer-api/v1/api.js";
 
-const viewerApi = new VctrApi("c0ae3aa8-caba-4995-a9be-d632bcb31836");
+const viewerApi = new VctrApi("c753addb-c451-4984-9c15-edbb711507dc");
 
 async function run() {
   await viewerApi.init();
   console.log("Objects", await viewerApi.getObjects());
+  viewerApi.setPositionAbsolute("Schirm_1_P", [0.0, 0, 0.0]);
+  viewerApi.setPositionAbsolute("Schirm_3_P", [0.0, 0, 0.0]);
+  viewerApi.setPositionAbsolute("Beine_1_P", [0.0, 0, 0.0]);
+  
   viewerApi.setVisibility("Schirm_1_P", false, false);
   viewerApi.setVisibility("Schirm_3_P", false, false);
   viewerApi.setVisibility("Beine_1_P", false, false);
 
-  viewerApi.setPositionAbsolute("Schirm_1_P", [0.0, 0, 0.0]);
-  viewerApi.setPositionAbsolute("Schirm_3_P", [0.0, 0, 0.0]);
-  viewerApi.setPositionAbsolute("Beine_1_P", [0.0, 0, 0.0]);
+
   
 
   document.getElementById("form-option-1").addEventListener("click", handleFormChange);
