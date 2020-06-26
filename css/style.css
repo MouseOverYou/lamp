@@ -10,6 +10,13 @@ body {
 p {
     font-family: 'Ubuntu', sans-serif;
     pointer-events: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 /*COLOURS*/
@@ -20,11 +27,17 @@ p {
     --blueBay: #0c83e2;
     --redBay: #d85757ff;
 
-    --schirmCol1: #ffc400;
-    --schirmCol2: #ffffff;
-    --schirmCol3: #8a0000;
-    --schirmCol4: #e1ff00;
-    --schirmCol5: #00c8ff;
+    --schirmCol1: #ffd000;
+    --schirmCol2: #d64b33 ;
+    --schirmCol3: #b9983e;
+    --schirmCol4: #ffffff;
+    --schirmCol5: #000000;
+
+    --bgCol1: #ffe1c9;
+    --bgCol2: #ffdada ;
+    --bgCol3: #ffedce;
+    --bgCol4: #ffffff;
+    --bgCol5: #eeeeee;
 
 }
 
@@ -70,22 +83,27 @@ p {
 
 #col-option-1 > *{
     background-color: var(--schirmCol1);
+    color: var(--bgCol1)
 }
 
 #col-option-2 > *{
     background-color: var(--schirmCol2);
+    color: var(--bgCol2)
 }
 
 #col-option-3 > *{
     background-color: var(--schirmCol3);
+    color: var(--bgCol3)
 }
 
 #col-option-4 > *{
     background-color: var(--schirmCol4);
+    color: var(--bgCol4)
 }
 
 #col-option-5 > *{
     background-color: var(--schirmCol5);
+    color: var(--bgCol5)
 }
 
 .menu-button{
@@ -95,7 +113,7 @@ p {
     height: 25px;
 	border-radius: 10px;
 	padding: 5px;
-	border: 1px solid var(--lightBay);
+	border: 2px solid var(--lightBay);
 	border-radius: 30px;
     margin: 4px;
 	opacity: 1;
@@ -104,7 +122,7 @@ p {
 
 .menu-button.selected{
     background-color: var(--lightBay);
-    border: 2px solid var(--blueBay);
+    border: 3px solid var(--blueBay);
 }
 
 
