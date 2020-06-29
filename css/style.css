@@ -122,12 +122,12 @@ p {
 
 .menu-button.selected{
     background-color: var(--lightBay);
-    border: 3px solid var(--blueBay);
+    border: 3px solid var(--darkBay);
 }
 
 
 .menu-button:hover {
-    border: 1px solid var(--blueBay);
+    border: 2px solid var(--darkBay);
   }
 
 .large {
@@ -145,6 +145,8 @@ p {
     display: flex;
 
 }
+
+/*Spot Colors*/
 
 
   @media only screen and (min-width: 600px){
